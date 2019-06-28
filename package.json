@@ -1,0 +1,22 @@
+{
+  "name": "shoppinglist",
+  "version": "1.0.0",
+  "description": "Shopping List",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arsalan318/ShoppingList.git"
+  },
+  "author": "Arsalan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arsalan318/ShoppingList/issues"
+  },
+  "homepage": "https://github.com/arsalan318/ShoppingList#readme",
+  "dependencies": {
+    "electron": "^5.0.6"
+  }
+}
