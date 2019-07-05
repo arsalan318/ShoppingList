@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Add Shopping List Item</title>
   </head>
   <body>
-    <form>
-      <div>
-        <label>Enter Item</label>
-        <input type="text" id="item" autofocus />
-      </div>
-      <button type="submit">add Item</button>
-    </form>
+    <div class="container">
+      <form>
+        <div>
+          <label>Enter Item</label>
+          <input type="text" id="item" autofocus />
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">
+          add Item
+        </button>
+      </form>
+    </div>
     <script>
       const electron = require('electron');
       const { ipcRenderer } = electron;

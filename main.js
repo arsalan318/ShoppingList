@@ -4,6 +4,9 @@ const path = require('path');
 
 const { app, BrowserWindow, Menu, ipcMain } = electron;
 
+//Set env
+process.env.NODE_ENV = 'production';
+
 let mainWindow;
 
 //Listen for app to be ready
@@ -72,7 +75,10 @@ const mainMenuTemplate = [
         }
       },
       {
-        label: 'Clear Item'
+        label: 'Clear Item',
+        click() {
+          mainWindow.webContents.send('item:clear');
+        }
       },
       {
         label: 'Quit',
